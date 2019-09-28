@@ -4,11 +4,12 @@ Use it as a guide for your programming assignment: writing a twitter sentiment a
 
 You will create a Python program named *sentiment.py*.  The program will
 
-Prompt the user to enter two search terms.  
-Search the twitter stream for the first 1000 tweets that contain the first search term.  
-Calculate a sentiment score for the first search term  
-Search the twitter stream for the first 1000 tweets that contain the second search term.  
-Determine which search term currently has the most positive sentiment on twitter and print the results.  
+1. Prompt the user to enter two search terms.  
+2. Search the twitter stream for the first 1000 tweets that contain the first search term.  
+3. Calculate a sentiment score for the first search term  
+4. Search the twitter stream for the first 1000 tweets that contain the second search term.  
+5. Determine which search term currently has the most positive sentiment on twitter and print the results. 
+
 To search the twitter stream you will have to get OAuth authentication credentials to use in your program.
 We did this in class.  The steps are outlined in the Day 13 class notes.a
 
@@ -21,13 +22,15 @@ For the Sentiment Analysis project, we will adopt the industry standard practice
 * Removing the branch that we used for developing the code
  
 Login to https://github.com/ChapmanCPSC353
- 
+
 Select the twitter repository
+
 Use the "Fork" button in the upper right-hand corner to fork the twitter repository into your personal GitHub account
-Add jenkinschapman as a collaborator to the fork in your personal account.
+
+Add *jenkinschapman* as a collaborator to the fork in your personal account.
 
 Create a branch of your repo named *"mybranch"*.  To do this, click on the "Branch" dropdown and type the name of your new branch
- 
+
 Open a terminal on your classroom computer or Mac laptop, or a git bash window on your Windows laptop.
 Use the *"git clone"* command to clone your copy of the twitter repo from your personal GitHub account to your computer.
  
@@ -39,9 +42,9 @@ At any time you can use the command *"git branch -a"* to list all your branche
 
 If you have not done so already, set your global user variables by typing:
  
-> git   config --global user.name  "John Doe"          
+> git   config --global user.name  "John Doe" 
 > git   config --global user.email doe123@mail.chapman.edu
-               
+
 Copy the    *twitterexample.py* file to a file named  *sentiment.py* 
 
 Use *pip* to install the libraries in the *"requirement.txt"* file.
@@ -62,24 +65,27 @@ Use flake8 to check the style compliance of the program by typing
 run the example program by typing
 
 > python sentiment.py
- 
+
 Then type the following commands to:  
             
-	* Update the index using the current content found in the working directory and prepare the content staged for the next commit.
-	* Store the current contents of the index in a new commit along with a log message from the user describing the changes.
-	* Upload the changed files to the repository
+* Update the index using the current content found in the working directory and prepare the content staged for the next commit.
+* Store the current contents of the index in a new commit along with a log message from the user describing the changes.
+* Upload the changed files to the repository
 
-> git add -sentiment.py
-> git commit -m "adds new file sentiment.py"
-> git push origin mybranch
+> git add -sentiment.py 
+> git commit -m "adds new file sentiment.py" 
+> git push origin mybranch 
 
 Go to the github page for your *"mybranch"* branch and issue a pull request by clicking the 'New pull request' button.
+
 Select your repo, and *not the class repo*, as the 'base repository' and click the green "Create Pull request' button.
+
 Click the green "Merge Pull Request" button and then click the green "Confirm Merge" button
- 
+
 Create a Jenkins job named *"twitter-yourusername"* where "yourusername" is your Chapman username
+
 Configure the Jenkins job to run flake8 on your sentiment.py program
- 
-When your program runs, is documented properly, and Jenkins does not report any errors or warnings, post the URL for your GitHub repo to Blackboard
+
+When your program runs, is documented properly, and Jenkins does not report any errors or warnings, post the URL for your GitHub repo to Canvas
 
 
