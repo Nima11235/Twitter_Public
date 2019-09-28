@@ -1,3 +1,4 @@
+flake8
 oauth2
 requests-oauth2
 twitter
