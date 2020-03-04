@@ -75,7 +75,7 @@ Then type the following commands to:  
 * Store the current contents of the index in a new commit along with a log message from the user describing the changes.
 * Upload the changed files to the repository
 
-> git add -sentiment.py    
+> git add sentiment.py    
 > git commit -m "adds new file sentiment.py"    
 > git push origin mybranch    
 
@@ -85,9 +85,9 @@ Select your repo, and *not the class repo*, as the 'base repository' and clic
 
 Click the green "Merge Pull Request" button and then click the green "Confirm Merge" button
 
-Create a Jenkins job named *"twitter-yourusername"* where "yourusername" is your Chapman username
+Create a Jenkins job named *"sentiment-yourusername"* where "yourusername" is your Chapman username
 
-Configure the Jenkins job to run flake8 on your sentiment.py program  
+Configure the Jenkins job to run flake8 on your sentiment.py program and to run the program with input from teh sentiment.input file. 
 
 Continue editing your program to meet the requirements specification and repeat these steps to push your code to your branch on github, issue pull requests to merge your code with the master branch, and accpet youe own pull requests to merge your code.  
 
