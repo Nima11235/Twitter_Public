@@ -10,7 +10,6 @@
 # Demonstrates connecting to the twitter API and accessing the twitter stream
 
 import twitter
-import json
 import sys
 import codecs
 
@@ -60,6 +59,5 @@ score2 = sentiment(word2)
 
 if (score1 > score2):
     print (word1 + "Bigger sentiment value than" + word2)
-
 elif (score2 < score1):
     print (word2 + "Bigger sentiment value than" + word1)
